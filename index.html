@@ -1,81 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>GEINCOCER - Gestión Integral para Conjuntos Cerrados</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-        header { background: #2c3e50; color: white; padding: 20px 0; text-align: center; }
-        section { padding: 20px; max-width: 1000px; margin: auto; background: white; margin-bottom: 20px; border-radius: 8px; }
-        h1, h2 { color: #2c3e50; }
-        ul { padding-left: 20px; }
-        footer { background: #2c3e50; color: white; text-align: center; padding: 10px 0; }
-        a.button { display: inline-block; padding: 10px 20px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        a.button:hover { background: #2980b9; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background-color: #004080; color: white; padding: 20px; text-align: center; }
+        section { padding: 40px; }
+        h2 { color: #004080; }
+        .testimonial, .gallery img { margin: 10px; }
+        .testimonial { background-color: #f0f0f0; padding: 15px; border-radius: 5px; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+        .gallery img { width: 200px; height: 150px; object-fit: cover; border: 2px solid #ccc; }
+        form { max-width: 500px; margin: auto; display: flex; flex-direction: column; }
+        input, textarea { margin: 10px 0; padding: 10px; font-size: 16px; }
+        input[type="submit"] { background-color: #004080; color: white; border: none; cursor: pointer; }
     </style>
 </head>
 <body>
+    <header>
+        <h1>GEINCOCER</h1>
+        <p>Gestión Integral para Conjuntos Cerrados</p>
+    </header>
 
-<header>
-    <h1>GEINCOCER</h1>
-    <p>Gestión Integral para Conjuntos Cerrados</p>
-</header>
+    <section>
+        <h2>¿Qué es GEINCOCER?</h2>
+        <p>GEINCOCER es una solución digital para la gestión administrativa, operacional y comunicacional de conjuntos cerrados habitacionales. Facilita la interacción entre residentes y administradores, mejora la seguridad y optimiza los procesos internos.</p>
+    </section>
 
-<section>
-    <h2>¿Qué es GEINCOCER?</h2>
-    <p>GEINCOCER es una aplicación web y móvil diseñada para optimizar la gestión administrativa, operacional, comunicacional y de seguridad en conjuntos cerrados habitacionales. Facilita la interacción entre residentes y administradores, mejora la eficiencia y promueve la convivencia.</p>
-</section>
+    <section>
+        <h2>Testimonios de Usuarios</h2>
+        <div class="testimonial">
+            <p><strong>Laura G. - Administradora</strong></p>
+            <p>"GEINCOCER ha transformado la forma en que gestionamos el conjunto. Todo está centralizado y los residentes están más satisfechos."</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Carlos M. - Residente</strong></p>
+            <p>"Reservar espacios comunes y reportar incidencias nunca fue tan fácil. ¡Excelente herramienta!"</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>María P. - Vigilancia</strong></p>
+            <p>"El módulo de seguridad nos permite llevar un control más preciso de visitantes y novedades."</p>
+        </div>
+    </section>
 
-<section>
-    <h2>Beneficios Clave</h2>
-    <ul>
-        <li>Gestión eficiente de residentes, pagos y reservas.</li>
-        <li>Comunicación directa entre administración y comunidad.</li>
-        <li>Control de acceso y seguridad digital.</li>
-        <li>Reportes financieros y operativos automatizados.</li>
-        <li>Acceso desde cualquier dispositivo.</li>
-    </ul>
-</section>
+    <section>
+        <h2>Galería de Imágenes</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200x150?text=Zona+Social" alt="Zona Social">
+            <img src="https://via.placeholder.com/200x150?text=Piscina" alt="Piscina">
+            <img src="https://via.placeholder.com/200x150?text=Portería" alt="Portería">
+            <img src="https://via.placeholder.com/200x150?text=Jardines" alt="Jardines">
+        </div>
+    </section>
 
-<section>
-    <h2>Módulos Principales</h2>
-    <ul>
-        <li>Administración General</li>
-        <li>Operaciones y Mantenimiento</li>
-        <li>Seguridad y Control de Acceso</li>
-        <li>Comunicación Interna</li>
-        <li>Reservas de Espacios Comunes</li>
-        <li>Gestión Documental y Legal</li>
-        <li>Panel de Control y Analítica</li>
-    </ul>
-</section>
+    <section>
+        <h2>Formulario de Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-<section>
-    <h2>Planes y Precios</h2>
-    <ul>
-        <li><strong>Plan Básico:</strong> Hasta 50 unidades - $29 USD/mes</li>
-        <li><strong>Plan Estándar:</strong> Hasta 150 unidades - $59 USD/mes</li>
-        <li><strong>Plan Premium:</strong> Más de 150 unidades - $99 USD/mes</li>
-    </ul>
-    <p>Incluye soporte técnico, actualizaciones y acceso completo a todos los módulos.</p>
-</section>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-<section>
-    <h2>Demo Funcional</h2>
-    <p>Explora la demo funcional de GEINCOCER en Glide:</p>
-    <a class="button" href="https://geincocer.glide.page" target="_blank">Ver Demo</a>
-</section>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-<section>
-    <h2>Contacto</h2>
-    <p>¿Interesado en implementar GEINCOCER en tu conjunto cerrado?</p>
-    <p>Escríbenos a: <strong>contacto@geincocer.com</strong></p>
-</section>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
-<footer>
-    <p>&copy; 2024 GEINCOCER. Todos los derechos reservados.</p>
-</footer>
+    <section>
+        <h2>Demo Funcional</h2>
+        <p>Explora la demo funcional de GEINCOCER en Glide:</p>
+        <p><a href="https://geincocer.glide.page" target="_blank">https://geincocer.glide.page</a></p>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 GEINCOCER. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
